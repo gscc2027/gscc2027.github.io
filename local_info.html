@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Information | GSCC 2027</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; padding-top: 80px; }
+        .nav-link { transition: color 0.3s ease; }
+        .nav-link:hover, .nav-link-mobile:hover { color: #3b82f6; }
+        .active-link { color: #2563eb; font-weight: 600; }
+        .section-title { border-bottom: 2px solid #3b82f6; padding-bottom: 0.5rem; display: inline-block; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md fixed w-full z-10 top-0">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-gray-800">GSCC 2027</a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="nav-link text-gray-600">Home</a>
+                <a href="schedule.html" class="nav-link text-gray-600">Schedule</a>
+                <a href="local_info.html" class="nav-link text-gray-600">Venue Info</a>
+                <a href="registration.html" class="nav-link text-gray-600">Registration</a>
+                <a href="about.html" class="nav-link text-gray-600">About GSCC</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden flex items-center">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="index.html" class="nav-link-mobile block py-2 px-4 text-sm hover:bg-gray-100">Home</a>
+            <a href="schedule.html" class="nav-link-mobile block py-2 px-4 text-sm hover:bg-gray-100">Schedule</a>
+            <a href="local_info.html" class="nav-link-mobile block py-2 px-4 text-sm hover:bg-gray-100">Venue Info</a>
+            <a href="registration.html" class="nav-link-mobile block py-2 px-4 text-sm hover:bg-gray-100">Registration</a>
+            <a href="about.html" class="nav-link-mobile block py-2 px-4 text-sm hover:bg-gray-100">About GSCC</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-20">
+        <h1 class="text-4xl font-bold text-center mb-12 section-title">Venue Information</h1>
+        
+        <!-- Venue Section -->
+        <section id="venue" class="mb-16">
+            <h2 class="text-3xl font-bold mb-6">Conference Venue</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center bg-white p-8 rounded-lg shadow">
+                <div>
+                    <h3 class="text-2xl font-bold mb-2">Georgia Institute of Technology</h3>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

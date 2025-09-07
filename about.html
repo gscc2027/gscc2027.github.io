@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About GSCC | GSCC 2027</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; padding-top: 80px; }
+        .nav-link { transition: color 0.3s ease; }
+        .nav-link:hover, .nav-link-mobile:hover { color: #3b82f6; }
+        .active-link { color: #2563eb; font-weight: 600; }
+        .section-title { border-bottom: 2px solid #3b82f6; padding-bottom: 0.5rem; display: inline-block; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md fixed w-full z-10 top-0">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-gray-800">GSCC 2027</a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="nav-link text-gray-600">Home</a>
+                <a href="schedule.html" class="nav-link text-gray-600">Schedule</a>
+                <a href="local_info.html" class="nav-link text-gray-600">Venue Info</a>
+                <a href="registration.html" class="nav-link text-gray-600">Registration</a>
+                <a href="about.html" class="nav-link text-gray-600">About GSCC</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden flex items-center">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="index.html" class="nav-link-mobile block py-2 px-4 text-sm hover:bg-gray-100">Home</a>
+            <a href="schedule.html" class="nav-link-mobile block py-2 px-4 text-sm hover:bg-gray-100">Schedule</a>
+            <a href="local_info.html" class="nav-link-mobile block py-2 px-4 text-sm hover:bg-gray-100">Venue Info</a>
+            <a href="registration.html" class="nav-link-mobile block py-2 px-4 text-sm hover:bg-gray-100">Registration</a>
+            <a href="about.html" class="nav-link-mobile block py-2 px-4 text-sm hover:bg-gray-100">About GSCC</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h1 class="text-4xl font-bold mb-12 text-center section-title">About the GSCC</h1>
+                <div class="max-w-4xl mx-auto text-lg text-gray-700 leading-relaxed space-y-6">
+                    <p>
+                        The Graduate Student Combinatorics Conference (GSCC) is an annual conference organized by and for graduate students. It has the expressed purpose of
+                    </p>
+                    <ul class="list-disc list-inside space-y-2 mt-4">
+                        <li>providing a space for graduate students to present their research in a comfortable and professional setting, </li>
+                        <li>bring graduate researchers from across the U.S. together to foster collaboration and progress,</li>
+                        <li>and introduce graduate students to new fields of research within combinatorics.</li>
+                    </ul>
+                    <h2 class="text-3xl font-bold pt-8 mt-8 border-t">Past Conferences</h2>
+                    <ul class="list-disc list-inside space-y-2 mt-4">
+                        <li><a href="https://sites.google.com/view/gscc2026" class="text-blue-600 hover:underline">GSCC 2026: University of Illinois Chicago</a></li>
+                        <li><a href="https://sites.google.com/usc.edu/gscc-2025" class="text-blue-600 hover:underline">GSCC 2025: University of Southern California</a></li>
+                        <li><a href="https://sites.google.com/view/gscc2024" class="text-blue-600 hover:underline">GSCC 2024: Carnegie Mellon University</a></li>
+                        <li><a href="https://sites.google.com/view/gscc2023" class="text-blue-600 hover:underline">GSCC 2023: Washington University in Saint Louis</a></li>
+                        <li><a href="https://sites.google.com/view/gscc2022" class="text-blue-600 hover:underline">GSCC 2022: University of California - San Diego</a></li>
+                        <li><a href="https://sites.google.com/view/gscc2021" class="text-blue-600 hover:underline">GSCC 2021: University of Minnesota</a></li>
+                        <li>GSCC 2020: Cancelled due to COVID-19</li>
+                        <li><a href="https://sites.google.com/view/gscc2019" class="text-blue-600 hover:underline">GSCC 2019: University of Pennsylvania and Drexel University</a></li>
+                        <li><a href="https://personal.utdallas.edu/~nxw170830/gscc/" class="text-blue-600 hover:underline">GSCC 2018: University of Texas - Dallas</a></li>
+                        <li><a href="https://mathematics.ku.edu/graduate-student-combinatorics-conference-2017" class="text-blue-600 hover:underline">GSCC 2017: University of Kansas</a></li>
+                        <li>GSCC 2016: Clemson University</li>
+                        <li>GSCC 2015: University of Kentucky</li>
+                        <li>GSCC 2014: Auburn University</li>
+                        <li>GSCC 2013: University of Minnesota</li>
+                        <li>GSCC 2012: University of Illinois Urbana-Champaign</li>
+                        <li>GSCC 2011: Pennsylvania State University</li>
+                        <li>GSCC 2010: Auburn University</li>
+                        <li>GSCC 2009: University of Kentucky</li>
+                        <li>GSCC 2008: University of California - Davis</li>
+                        <li>GSCC 2007: University of Washington</li>
+                        <li>GSCC 2006: University of Wisconsin</li>
+                        <li>GSCC 2005: University of Minnesota</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
+
