@@ -43,20 +43,86 @@
     </header>
 
     <main class="container mx-auto px-6 py-20">
-        <h1 class="text-4xl font-bold text-center mb-12 section-title">Venue Information</h1>
+        <h1 class="text-4xl font-bold text-center mb-12 section-title">Local Information</h1>
         
         <!-- Venue Section -->
         <section id="venue" class="mb-16">
             <h2 class="text-3xl font-bold mb-6">Conference Venue</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center bg-white p-8 rounded-lg shadow">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 bg-white p-8 rounded-lg shadow">
                 <div>
-                    <h3 class="text-2xl font-bold mb-2">Georgia Institute of Technology</h3>
+                    <h3 class="text-2xl font-bold mb-2">Georgia Tech Campus</h3>
+                    <!-- <p class="text-lg text-gray-600 mb-4">[Street Address]<br>[City, State, Zip Code]</p> -->
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        GSCC will take place on Georgia Tech's campus. The specific buildings for sessions will be confirmed soon and will be marked to the map!
+                    </p>
+                    <a href="#getting-there" class="text-blue-600 font-semibold hover:underline">Getting to Georgia Tech &rarr;</a>
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-xl">
+                    <img src="images/map.png" alt="Map to venue" class="w-full h-full object-cover">
                 </div>
             </div>
         </section>
 
+        <!-- Accommodation Section -->
+        <section id="accommodation" class="mb-16">
+            <h2 class="text-3xl font-bold mb-6">Accommodation</h2>
+            <div class="bg-white p-8 rounded-lg shadow">
+                <!-- <p class="text-gray-700 leading-relaxed">Here are a few recommended hotels near the conference venue. Please book in advance to ensure availability.</p>
+                <ul class="list-disc list-inside mt-4 space-y-2">
+                    <li><strong>[Hotel Name 1]:</strong> Approx. [Distance] from venue. [Brief description or link].</li>
+                    <li><strong>[Hotel Name 2]:</strong> Approx. [Distance] from venue. [Brief description or link].</li>
+                    <li><strong>[Hotel Name 3]:</strong> Approx. [Distance] from venue. [Brief description or link].</li>
+                </ul> -->
+                <p class="text-gray-700 leading-relaxed"><a href="https://www.gatechhotel.com/" class="text-blue-600 font-semibold hover:underline">Georgia Tech Hotel</a></p>
+            </div>
+        </section>
+
+        <!-- Dining Section -->
+        <section id="dining" class="mb-16">
+            <h2 class="text-3xl font-bold mb-6">Dining & Attractions</h2>
+             <div class="bg-white p-8 rounded-lg shadow space-y-6">
+                <div>
+                    <p class="text-gray-700 leading-relaxed">
+                        Atlanta offers a diverse range of dining options and local attractions. Explore the area and enjoy what our city has to offer!</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Dining Near Campus</h3>
+                    <ul class="list-disc list-inside mt-4 space-y-2">
+                        <li><strong>John Lewis Student Center:</strong> On campus. <a href="https://dining.gatech.edu/dining-locations/john-lewis-student-center" class="text-blue-600 font-semibold hover:underline">https://dining.gatech.edu/dining-locations/john-lewis-student-center</a>.</li>
+                        <li><strong>Tech Square:</strong> 10 minute walk. Many good food options.</li>
+                    </ul>
+                </div>                
+                <div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Attractions</h3>
+                    <ul class="list-disc list-inside mt-4 space-y-2">
+                        <li><strong>Georgia Aquarium</strong></li>
+                        <li><strong>World of Coca-Cola</strong></li>
+                        <li><strong>National Center for Civil and Human Rights</strong></li>
+                    </ul>
+                </div>
+             </div>
+        </section>
+
+        <!-- Getting There Section -->
+        <section id="getting-there">
+            <h2 class="text-3xl font-bold mb-6">Getting There From ATL</h2>
+            <div class="bg-white p-8 rounded-lg shadow space-y-6">
+                <div>
+                    <p class="text-gray-700 leading-relaxed">We recommend flying into Atlanta through Hartsfield-Jackson Atlanta International Airport (ATL).</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Via MARTA</h3>
+                    <p class="text-gray-700 leading-relaxed">MARTA is Atlanta's public transportation system. There is a rail station located inside the airport, near the baggage claim area at the north end of the airport. A one-way fare will cost you $2.50. Trains leave approximately every 10 minutes. All trains leaving the airport travel north toward Georgia Tech. The two closest stops to Georgia Tech are North Avenue and Midtown. You can take the GT Stinger bus from Midtown station to campus. Look for the Gold Route at the <a href="https://www.pts.gatech.edu/shuttles/stinger/" class="text-blue-600 font-semibold hover:underline">GT Stinger bus schedule.</a></p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Via Rideshare Services</h3>
+                    <p class="text-gray-700 leading-relaxed">After collecting your bags at baggage claim, you will follow signs to the rideshare pick-up lot. It is about a 5 minute walk to the designated rideshare pickup area. The typical fare is approximately $35.</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script src="js/main.js"></script>
 </body>
 </html>
+
